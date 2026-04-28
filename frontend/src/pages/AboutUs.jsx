@@ -1,4 +1,4 @@
-import { CheckCircle2, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Users, Target, Rocket, Zap, HeartHandshake } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
@@ -52,6 +52,86 @@ const AboutUs = () => {
               Explore Our Services
               <ArrowRight className="w-5 h-5" />
             </Link>
+          </div>
+        </div>
+
+        {/* Who We Work With Section */}
+        <div className="mt-32 pt-24 border-t border-slate-100">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Who We Work With</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              We partner with serious business owners and organizations that rely on performance-driven lead generation to scale revenue.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {[
+              "Coaches & Consultants", "Course Creators & Infopreneurs", "Affiliate & Network Marketers", 
+              "Service-Based Businesses", "Real Estate Developers & Agencies", "Travel Agencies & Tour Operators", 
+              "Healthcare & Wellness Clinics", "Education & Training Institutes", "Local Businesses (High-Ticket)", "E-commerce Brands (Lead Gen)"
+            ].map((industry, i) => (
+              <div key={i} className="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center hover:bg-white hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300 flex items-center justify-center min-h-[100px]">
+                <p className="text-sm font-bold text-slate-800">{industry}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Working Methodology Section */}
+        <div className="mt-32 pt-24 border-t border-slate-100">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Working Methodology</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              We follow a systemized approach to ensure every campaign we launch is optimized for maximum conversion and ROI.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-1 gap-12 max-w-4xl mx-auto">
+            {[
+              {
+                title: "Onboarding & Service Activation",
+                desc: "Get started by choosing a suitable service package with LeadsHub Media. Once onboarded, our team initiates a seamless setup process to kickstart your growth journey.",
+                icon: Users,
+                step: "01"
+              },
+              {
+                title: "Strategic Growth Consultation",
+                desc: "Our experts will connect with you for a detailed consultation to understand your business, target audience, and revenue goals. We will craft a customized strategy focused on scalable growth.",
+                icon: Target,
+                step: "02"
+              },
+              {
+                title: "Advanced Ads Setup & Execution",
+                desc: "We design, set up, and launch high-converting ad campaigns across platforms like Facebook and Instagram, ensuring precise audience targeting and maximum reach.",
+                icon: Rocket,
+                step: "03"
+              },
+              {
+                title: "High-Quality Lead Generation",
+                desc: "Start receiving qualified and conversion-ready leads directly to your preferred platform (WhatsApp, CRM, landing pages). Our system ensures consistent and relevant lead flow.",
+                icon: Zap,
+                step: "04"
+              },
+              {
+                title: "Dedicated Personal Support",
+                desc: "Our dedicated support team continuously monitors your campaigns, provides timely assistance, and optimizes performance to maximize your ROI.",
+                icon: HeartHandshake,
+                step: "05"
+              }
+            ].map((method, idx) => (
+              <div key={idx} className="flex flex-col md:flex-row items-center md:items-start gap-8 group">
+                <div className="relative flex-shrink-0">
+                  <div className="w-16 h-16 bg-white border-2 border-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:bg-indigo-600 group-hover:text-white group-hover:border-indigo-600 transition-all duration-300">
+                    <method.icon className="w-8 h-8" />
+                  </div>
+                  <span className="absolute -top-3 -right-3 w-8 h-8 bg-slate-900 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-4 border-white">
+                    {method.step}
+                  </span>
+                </div>
+                <div className="text-center md:text-left pt-2">
+                  <h4 className="text-xl font-bold text-slate-900 mb-2">{method.title}</h4>
+                  <p className="text-slate-600 leading-relaxed max-w-2xl">{method.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

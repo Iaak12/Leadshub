@@ -164,7 +164,7 @@ const ContactUs = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900">Our Location</h4>
-                  <p className="text-slate-600 mt-1">Kanpur Nagar, Uttar Pradesh, India</p>
+                  <p className="text-slate-600 mt-1">Andheri East, Mumbai, MA</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -173,7 +173,7 @@ const ContactUs = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900">Phone & WhatsApp</h4>
-                  <a href="tel:+916390002006" className="text-slate-600 block mt-1 hover:text-indigo-600">+91-6390002006</a>
+                  <a href="tel:+919178337808" className="text-slate-600 block mt-1 hover:text-indigo-600">+91-9178337808</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -182,7 +182,7 @@ const ContactUs = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900">Email Address</h4>
-                  <a href="mailto:leadsartist1@gmail.com" className="text-slate-600 block mt-1 hover:text-indigo-600">leadsartist1@gmail.com</a>
+                  <a href="mailto:leadshubinfo@gmail.com" className="text-slate-600 block mt-1 hover:text-indigo-600">leadshubinfo@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -192,7 +192,7 @@ const ContactUs = () => {
               <h4 className="font-bold text-xl mb-2">Want a quick response?</h4>
               <p className="text-slate-300 mb-6 text-sm">Reach out to us directly via WhatsApp and our team will get back to you immediately.</p>
               <a 
-                href="https://wa.me/+916390002006" 
+                href="https://wa.me/919178337808" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg shadow-green-500/20"

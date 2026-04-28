@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, Play, Users, Target, Rocket, HeartHandshake, Zap, Trophy } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Play, Users, Target, Rocket, HeartHandshake, Zap, Trophy, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ReviewSection from '../components/sections/ReviewSection';
 
@@ -70,11 +70,36 @@ const Home = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Become Client", desc: "Started LeadsHub with any service package and become a client of LeadsHub then we will start your work.", icon: Users },
-              { title: "Meeting for growth", desc: "Our Team will contact you through phone call and discuss about your business growth that how we can scale fast.", icon: Target },
-              { title: "Ads Setup", desc: "Our team will create ad campaigns and start service for you and start showing ads to your targeted audience.", icon: Rocket },
-              { title: "Quality Leads", desc: "Quality leads will start coming in your destination where you want and you will convert them and generate your sales.", icon: Zap },
-              { title: "Personal Support", desc: "Special team will support you in any problem and when you have any doubt you can ask with our special team.", icon: HeartHandshake }
+              { 
+                title: "Onboarding & Service Activation", 
+                desc: "Get started by choosing a suitable service package with LeadsHub Media. Once onboarded, our team initiates a seamless setup process to kickstart your growth journey.", 
+                icon: Users 
+              },
+              { 
+                title: "Strategic Growth Consultation", 
+                desc: "Our experts will connect with you for a detailed consultation to understand your business, target audience, and revenue goals. We will craft a customized strategy focused on scalable growth.", 
+                icon: Target 
+              },
+              { 
+                title: "Advanced Ads Setup & Execution", 
+                desc: "We design, set up, and launch high-converting ad campaigns across platforms like Facebook and Instagram, ensuring precise audience targeting and maximum reach.", 
+                icon: Rocket 
+              },
+              { 
+                title: "High-Quality Lead Generation", 
+                desc: "Start receiving qualified and conversion-ready leads directly to your preferred platform (WhatsApp, CRM, landing pages). Our system ensures consistent and relevant lead flow.", 
+                icon: Zap 
+              },
+              { 
+                title: "Dedicated Personal Support", 
+                desc: "Our dedicated support team continuously monitors your campaigns, provides timely assistance, and optimizes performance to maximize your ROI.", 
+                icon: HeartHandshake 
+              },
+              { 
+                title: "Social Media Marketing", 
+                desc: "Increase your brand visibility and engagement through strategic social media management and content creation.", 
+                icon: Globe 
+              }
             ].map((step, idx) => (
               <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center mb-6">

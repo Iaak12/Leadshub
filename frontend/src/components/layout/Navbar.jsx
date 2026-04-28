@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../../assets/logo1.png';
+import logo from '../../assets/logo-full1.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +34,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="LeadsHub Logo"
-            className="w-16 h-16 object-contain group-hover:scale-105 transition-transform"
+            className="w-26 h-26 object-contain group-hover:scale-105 transition-transform"
           />
         </Link>
 
@@ -56,13 +56,9 @@ const Navbar = () => {
 
           <div className="flex items-center gap-3 ml-2">
             <a
-              href="https://leadshub.com/client-login"
-              className="text-sm font-medium text-slate-700 hover:text-indigo-600 transition-colors"
-            >
-              Login
-            </a>
-            <a
-              href="#pricing"
+              href="https://wa.me/919178337808"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-medium text-white transition-all bg-indigo-600 rounded-full hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-500/30"
             >
               Get Started
@@ -105,13 +101,9 @@ const Navbar = () => {
               ))}
               <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-slate-100">
                 <a
-                  href="https://leadshub.com/client-login"
-                  className="px-4 py-2 text-sm font-medium text-center text-slate-700 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors"
-                >
-                  Login
-                </a>
-                <a
-                  href="#pricing"
+                  href="https://wa.me/919178337808"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-4 py-2 text-sm font-medium text-center text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors"
                 >
                   Get Started
